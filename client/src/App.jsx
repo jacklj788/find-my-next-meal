@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import MainNav from './components/layout/MainNav'
 import Panel from "./components/layout/Panel"
+import FullScreenLoader from './components/loaders/FullScreenLoader'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,8 @@ function App() {
       <p className="text-accent">My main body text</p>
     </Panel>
   </main>
+
+    <FullScreenLoader isRendered={true} duration={500} />
 </div>
 
 
